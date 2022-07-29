@@ -1,0 +1,900 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+
+  
+}
+
+.container {
+    max-width: 1444px;
+    margin: 0 165px;
+}
+
+.header {
+    background-image: url(../images/bg.jpg);
+    height: 100vh;    /* блок буде розтягуватись на всю висоту екрана */
+    background-repeat: no-repeat;   /* не повторювати зображення */
+    background-size: cover;   /* масштабує зображення на весь екран рівномірно */
+}
+
+.header__line {
+    padding-top: 50px; /* внутрішній відступ зверху */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__item {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;  /* всі букви великі */
+    margin-right: 25px;
+    transition: color .1s linear;
+} 
+
+.nav__item:hover {
+    color: #FF7400;
+}
+
+.cart {
+    position: relative;
+    border-right: 1px solid #FFFFFF;
+    padding-right: 20px;
+    height: 50px;
+    margin-left: 35px;
+}
+
+.cart__img {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.num {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 8px;
+    transition: color .1s linear;
+}
+
+.num:hover {
+    color: #FF7400;
+}
+
+.phone {
+    margin-left: 30px;
+}
+
+.phone__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+}
+
+.phone__holder {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 45px;
+}
+
+.button {
+    background: #FF7400;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+
+    padding: 14px 18px;
+    
+    transition: color .2s linear;
+}
+
+.button:hover,
+.button:focus {
+    background: #c15e0c;
+    color: #000000;
+}
+
+.button:active {
+    transform: translate(2px, 5%);
+}
+
+.header__down {
+    position: relative;
+}
+
+.header__title {
+    color: #D67E35;
+    font-family: 'Tinos', serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    margin-top: 262px;
+}
+
+.header__subtitle {
+    font-size: 80px;
+    line-height: 92px;
+    margin-bottom: 12px;
+
+}
+
+.header__suptitle {
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header__suptitle::after {
+    background-color: #C4C4C4;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 60px;
+    top: 172px;
+    left: 77px;
+}
+
+.header__suptitle::before {
+    background-color: #C4C4C4;
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 60px;
+    top: 172px;
+    left: 340px;
+}
+
+.header__btn {
+    margin-top: 20px;
+}
+
+.header__button {
+    background: #FF7400;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+
+    padding: 14px 28px;
+
+    transition: color .2s linear;
+   
+}
+
+.header__button:hover,
+.header__button:focus {
+    background: #c15e0c;
+    color: #000000;
+}
+
+.header__button:active {
+    transform: translate(2px, 5%);
+}
+
+/* Cards */
+
+.cards__holder {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    font-family: 'Tinos', serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #656363;
+
+    width: 349px;
+    height: 328px;
+
+    padding: 0 60px;
+    margin-right: 30px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    background: #ffffff;
+    margin-top: -100px;
+}
+
+.card__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.card__title {
+    color: #2C2C2C;
+    margin-top: 4px;
+}
+
+.card__title span {
+    color: #BC9060;
+}
+
+.card__desc {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* History */
+
+.history {
+    margin-top: 166px;
+    padding-bottom: 200px;
+}
+
+.history__title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    width: 444px;
+}
+
+.history__title span {
+    color: #D67E34;
+}
+
+.history__desc {
+    color: #656363;
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 444px;
+    margin-top: 20px;
+}
+
+.history__number {
+    display: flex;
+    justify-content: center;
+    width: 444px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.number__item {
+    color: #BC9060;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0em;
+
+    margin-right: 60px;
+    text-align: center;
+}
+
+.number__item span {
+    display: block;   /* блочні елементи розташовуються один над другим */
+    color: #000000;
+    font-size: 20px;
+}
+
+.history__holder {
+    display: flex;
+    justify-content: space-around;
+}
+
+.history__images {
+    position: relative;
+    /* background: #000; */
+    width: 540px;
+    height: 500px;
+}
+
+.images__1 {
+    position: absolute;
+    z-index: 0;
+    top: 54px;
+    left: 0;
+}
+
+.images__2 {
+    position: absolute;
+    z-index: 7;
+    left: 150px;
+    margin-top: 0;
+}
+
+.images__3 {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+}
+
+.images__4 {
+    position: absolute;
+    z-index: 0;
+    top: 60px;
+    right: 45px;
+}
+
+/* black-block */
+
+.black__block {
+    background-image: url(../images/black-bg.jpg);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.left__title {
+    color: #D67E34;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.left__text {
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.right__btn {
+    background: #FF7400;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    padding: 14px 18px;
+    transition: color .2s linear;
+}
+
+.right__btn:hover,
+.right__btn:focus {
+    background: #c15e0c;
+    color: #000000;
+}
+
+.right__button:active {
+    transform: translate(2px, 5%);
+}
+
+
+.block__holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* наши блюда */
+
+.dishes__title {
+    color: #000000;
+    font-family: 'Tinos';
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-top: 132px;
+    padding-bottom: 139px;
+}
+
+.dishes__title span {
+    color: #D67E34;
+}
+
+.burgers {
+    display: flex;
+    justify-content: center;
+}
+
+.burger__list {
+    list-style: none;
+    margin-top: 0;
+    padding-inline-start: 0;
+}
+
+.burger__item {
+    color: #000000;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+}
+
+.burger__item span {
+    margin-left: 30px;
+}
+
+.pizza__image {
+    margin-right: 30px;
+}
+
+/* Menu  */
+
+.menu {
+    background-image: url(../images/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.menu__title {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 138px;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 226px;
+    margin-right: 30px;
+}
+
+.menu__images {
+    position: relative;
+}
+
+.price__image {
+    position: absolute;
+    bottom: 0;
+    right: 58px;
+}
+
+.price__uh {
+    position: absolute;
+    bottom: 30px;
+    right: 88px;
+
+    color: #fff;
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.menu__recommended {
+    position: absolute;
+    top: -80px;
+    left: 0;
+}
+
+.menu__recomtext {
+    position: absolute;
+    top: -70px;
+    left: 12px;
+
+    color: #000000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.menu__head {
+    color: #000000;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 22px;
+}
+
+.menu__text {
+    color: #000000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 72px;   
+    padding-top: 17px;
+    
+}
+
+.menu__button {
+    margin-top: 34px;
+    margin-bottom: 43px;
+}
+
+.menu__btn {
+    background: #D67E34;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+
+    text-decoration: none;
+    border: none;
+    box-shadow: 5px 5px 10px 0px #00000040;
+    border-radius: 3px;
+    padding: 14px 68px;
+    transition: color .2s linear;
+}
+
+.menu__btn:hover,
+.menu__btn:focus {
+    background: #c15e0c;
+    color: #000000;
+}
+
+.menu__button:active {
+    transform: translate(2px, 5%);
+}
+
+.comment {
+    background: #E5E5E5;
+    padding-top: 104px;
+    padding-bottom: 139px;
+    text-align: center;
+}
+
+.comment__text {
+    color: #000000;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.comment__image {
+    margin-top: 18px;
+}
+.comment__img {
+    border-radius: 50px;
+}
+.comment__type {
+    color: #000000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 16px;
+}
+.comment__name {
+    color: #000000;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 10px;
+}
+
+/* Galery  */
+
+.galery__title {
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.galery__title span {
+    color: #D67E34;
+}
+
+.galery__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.galery__left { 
+    margin-right: 30px;
+}
+ 
+.galery__down,
+.galery__up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Cook  */
+
+.cook {
+    padding-bottom: 100px;
+}
+
+.cook__title {
+    font-family: Tinos;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 107px;
+}
+
+.cook__title span {
+    color: #D67E34;
+}
+
+.cook__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 50px 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* меню в бургере */
+
+.burger__menu {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.burger__slide {
+    position: absolute; /* щоб меню змістилось в центр відносно лого */
+    
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent; /* робимо прозрачність кнопки */
+}
+
+.disp {
+    display: none;
+}
+
+/* Адаптация  */
+
+@media (max-width: 1500px) {
+
+    .galery__content {
+        display: block;
+    }
+
+    .img__gal,
+    .galery__up,
+    .galery__down {
+        display: block;
+        margin-left: auto;  /* вирівнювання по центру */
+        margin-right: auto; /* вирівнювання по центру */
+    }
+
+    .img__gal {
+        margin-bottom: 20px;
+    }
+
+    .galery__left {
+        margin-right: 0;
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .menu__list {
+        display: block;
+    }
+
+    .menu__item {
+        margin: 20px auto;
+        height: auto;   
+        padding-bottom: 5px;
+    }
+
+    .header__title {
+        position: static;
+    }
+
+    .header__suptitle::before,
+    .header__suptitle::after {
+        content: none;  /*   для того щоб приховати зміст */
+    }
+
+    .cook__content {
+        display: block;
+    }
+
+    .cook__content img {    /* будемо працювати тільки з картинками в цьому класі */
+        display: block;
+        margin: 20px auto;
+    }
+
+    .block__holder {
+        display: block;
+        text-align: center;
+    }
+
+    .right__button {
+        margin-top: 50px;
+    }
+
+    .history__images {
+        display: none;  /*   для того щоб приховати зміст */
+    }
+}
+
+@media (max-width: 1185px) {
+
+    .burger__menu {
+        display: block;
+    }
+
+    .nav, 
+    .cart,
+    .phone,
+    .btn {
+        display: none;
+    }
+
+    .header__line {
+        justify-content: space-between;
+    }
+
+    .pizza__image {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .cards__holder {
+        display: block;
+    }
+
+    .card {
+        width: auto;  /*  картки на всю ширину  */
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .history__holder {
+        display: block;
+    }
+
+  
+    .high {
+        display: none; /* уберем картинки що вилазять за рамки */
+    }
+
+    .burger__item {
+        display: block;
+        text-align: center;
+    }
+
+    .burg_small {
+        margin: 0 40px;
+    }
+
+
+    .container {
+        margin: auto 40px;
+    }
+
+    .history__title,
+    .history__desc,
+    .history__number {
+        width: auto;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .header {
+        background-image: url(../images/bg-small.jpg);
+    }
+
+  
+    .history__number {
+        display: block;
+    }
+
+    .left__title {
+        font-size: 40px;
+    }
+
+    .header__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .header__subtitle {
+        font-size: 40px;
+        line-height: 46px;
+    }
+}
